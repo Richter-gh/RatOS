@@ -30,9 +30,9 @@ usermod -a -G spi "${BASE_USER}"
 
 # Step 3: Disable bluetooth and related services
 echo_green "Disabling Bluetooth related services..."
-systemctl_if_exists disable hciuart.service
-systemctl_if_exists disable bluetooth.service
-systemctl_if_exists disable bluealsa.service
+#systemctl_if_exists disable hciuart.service
+#systemctl_if_exists disable bluetooth.service
+#systemctl_if_exists disable bluealsa.service
 
 # Step 4: Increase swapfile size
 if [[ -f "${PICONFIG_SWAP_CONF_FILE}" ]]; then
