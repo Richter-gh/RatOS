@@ -79,7 +79,7 @@ popd &> /dev/null || exit 1
 
 
 ## Enable systemd service
-systemctl_if_exists enable klipper.service
+#systemctl_if_exists enable klipper.service
 
 ## Done message
 echo_green "Installing Klipper and enable klippy Service ..."
